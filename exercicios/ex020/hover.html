@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    div > p{
+        display: none;
+    }
+     div:hover >p{
+        display: block;
+        color: coral;
+        background-color: darkolivegreen;
+        width: 250px;
+    }
+    div :hover{
+        color: cornflowerblue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <div>Olha só isso:&downarrow;
+        <p>Viu só! eu não sou invisível</p>
+    </div>
+</body>
+</html>

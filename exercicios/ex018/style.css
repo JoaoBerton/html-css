@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&family=WDXL+Lubrifont+JP+N&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&family=Monoton&family=WDXL+Lubrifont+JP+N&display=swap');
+*{
+text-align: justify;
+}
+body{
+   background-color: cornflowerblue;
+}
+.monoton-regular,h1 {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  font-size: 2.5em;
+  border:solid 2px;
+}
+  .lxgw-marker-gothic-regular,h2{
+  font-family: "LXGW Marker Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: gray;
+        }
+        h1 {
+            border: 2px solid gray;
+            background-color: beige;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            background-color: azure;
+        }
+        .selected:hover {
+            color: rgb(0, 0, 0);
+        }
+        a:hover {
+            text-decoration: underline;
+            color: coral;
+        } 
+        .selected::before {
+            content: '\00265B';
+            color: goldenrod;
+        }
+        .two::before {
+            content: '\00265A';
+            color: red;
+        }
+        .three::before {
+            content:'\00265D' ;
+            color: cadetblue;
+        }
+        a::after {
+            content: '[Link]';
+            font-size: 13px;
+            color: chocolate;
+            font-weight: 600;
+        }   
+        .selected:active {
+            background-color: rgb(12, 192, 66);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com pesudo-Elementos</h1>
+    <ul>
+        <li><a href="https://facebook.com" class="selected" target="_blank">Esta é a minha página no Facebook</a></li>
+        <li><a href="https://instagram.com" class="two" target="_blank">Acesse o meu pefil no Instagram</a></li>
+        <li><a href="https://github.com" class="three" target="_blank">Acesse também o meu repositório no Git Hub</a> </li>
+    </ul>
+</body>
+</html>

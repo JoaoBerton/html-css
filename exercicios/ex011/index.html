@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <p>Agora estamos trabalhando com imagens que podem se adaptar com o tamanho de vários dispositivos diferentes como: Celular, Tablet, PC, TV; Preste bem atençaõ agora pois vamos colocar esta ideia em ação &downarrow;</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="imagem adaptável">
+    </picture>
+    <p><h1>Adicionando áudios em HTML5</h1></p>
+    <em>Primeira forma de fazer isso:</em>
+    <br>
+    <audio src="midia/mus-1.mp3" autoplay controls>Ouça agora</audio>
+    <br>
+    <strong>Segunda e mais recomendada:</strong>
+    <br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/mus-1.mp3" type="audio/mpeg">
+        <source src="midia/mus-2.mp3" type="audio/mpeg">
+        <p>Caso nenhum deles funcionem você pode baixar em: <a href="midia/mus-1.mp3" download="midia/mus1.mp3" type="audio/mpeg"></a></p>
+    </audio>
+</body>
+</html>

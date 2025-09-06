@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work With External Fonts</title>
+    <style>
+        @font-face{
+             font-family: 'Realife';
+            src: url(fonts/Realife\ Moment.otf),
+        format(opentype),url(fonts/Realife\ Moment.ttf),format(truetype),url(fonts/Realife\ Moment\ Italic.otf),format(opentype),url(fonts/Realife\ Moment\ Italic.ttf),format(truetype);
+        font-weight: normal;
+        font-style: normal;
+        }
+        body{
+            text-align: justify;
+            background-color: rgba(238, 238, 211, 0.789);
+        }
+        h1{
+            font-family: 'Realife';
+            font-size: 4em;
+            font-weight: 400;
+            font-style: normal;
+            color: yellowgreen;
+            box-shadow: 2px 2px 16px lightblue;
+        }
+        p{
+            color: rgb(27, 195, 139);
+            font-family: 'Realife';
+            font-style: normal;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>External Fonts</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis id ex reprehenderit aut autem. Placeat consequatur aperiam exercitationem expedita excepturi similique, officiis porro facilis, fugiat soluta eveniet minima quod?</p>
+</body>
+</html>
