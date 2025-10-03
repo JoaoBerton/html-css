@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tbody {
+            width: 500px;
+        }
+        th {
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: burlywood;
+        }
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 50px;
+            height: 40px;
+        }
+        .num {
+            text-align: right;
+        }
+        .estados {
+            text-align: center;
+            padding: 0px, -20, 0px, -20px;
+            background-color: azure;
+            font-size: 1.1em;
+        }
+        tfoot {
+            padding: 10px;
+            vertical-align: middle;
+           background-color: coral;
+           color: rgb(58, 48, 48);
+           font-size: 1.1em;
+           width: 100px;
+           height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th scope="col">Região</th>
+            <th scope="col">Estados</th>
+            <th scope="col">População</th>
+        </thead>
+        <tbody>
+            <td class="estados">Norte</td>
+           <td>
+            Acre<br>
+            Amapá<br>
+            Amazonas<br>
+            Pará<br>
+            Rondônia<br>
+            Tocantins
+            </td>
+            <td class="num">17 354 884</td>
+            <tr>
+                <td class="estados">Nordeste</td>
+                <td>Alagoas<br>
+                Bahia<br>
+                Ceará<br>
+                Maranhão<br>
+                Paraíba<br>
+                Pernambuco<br>
+                Piauí<br>
+                Rio Grande do Norte<br>
+                Sergipe
+                </td>
+                <td class="num">54 658 515</td>
+            </tr>
+            <tr>
+            <td class="estados">Centro-Oeste</td>
+            <td>Distrito Federal<br>
+            Goiás<br>
+            Mato Grosso<br>
+            Mato Grosso do Sul</td>
+            <td class="num">16 289 538</td>
+            </tr>
+            <tr>
+                <td class="estados">Sudeste</td>
+                <td>
+                Espírito Santo<br>
+                Minas Gerais<br>
+                Rio de Janeiro<br>
+                São Paulo
+                <td class="num">84 840 113</td>
+            </td>
+            </tr>
+            <tr>
+                <td class="estados">Sul</td>
+                <td>
+                Paraná<br>
+                Santa Catarina<br>
+                Rio Grande do Sul
+            </td>
+            <td class="num">29 937 706</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total:</th>
+                <td> de: 5.570 municípios</td>
+                <td class="num"><strong>203 080 756</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
