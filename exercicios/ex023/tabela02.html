@@ -9,11 +9,25 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            border: 1px solid black;
+            border: 2px solid black;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.3em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: linear-gradient(to right,rgb(137, 137, 137), transparent); 
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(137, 137, 137) ;
         }
         tbody {
             width: 500px;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
         th {
             width: 200px;
@@ -22,7 +36,7 @@
             background-color: burlywood;
         }
         td {
-            border: 1px solid black;
+            border: 2px solid black;
             border-collapse: collapse;
             padding: 10px;
             width: 50px;
@@ -34,13 +48,12 @@
         .estados {
             text-align: center;
             padding: 0px, -20, 0px, -20px;
-            background-color: azure;
             font-size: 1.1em;
         }
         tfoot {
             padding: 10px;
             vertical-align: middle;
-           background-color: coral;
+           background-color: rgb(137, 137, 137);
            color: rgb(58, 48, 48);
            font-size: 1.1em;
            width: 100px;
@@ -50,6 +63,7 @@
 </head>
 <body>
     <table>
+        <caption>Quantidade Total de pessoas no Brazil</caption>
         <thead>
             <th scope="col">Região</th>
             <th scope="col">Estados</th>
@@ -116,5 +130,6 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates saepe culpa explicabo animi dignissimos laudantium! Atque commodi iure quis exercitationem consequatur ipsa, vitae voluptatibus cupiditate saepe voluptatum numquam ratione at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias porro aspernatur cum dolor amet suscipit esse a quia ratione cumque? Provident deleniti corrupti cumque ut omnis inventore sed aspernatur non. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ipsum a enim repellendus. Autem, similique dolores. Consequuntur ipsa explicabo aperiam sed quaerat deleniti nam, omnis enim modi corporis, repellendus pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam animi quibusdam nostrum, beatae magnam ratione corrupti sequi rerum eius ipsa accusantium nemo, aspernatur velit fuga inventore? Consequuntur nesciunt placeat aut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim doloribus delectus soluta quos magnam nisi, rem cumque quae iure hic earum fugit deleniti consequuntur qui voluptatibus dolor numquam cupiditate. Consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ut harum ducimus est pariatur dolor obcaecati libero dolores esse excepturi voluptatem facilis, reprehenderit provident sequi, magnam deserunt hic maxime aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus, maxime itaque, accusamus sit illum ipsum provident mollitia laudantium distinctio porro ex culpa facere blanditiis quo assumenda doloremque deleniti aperiam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, accusantium impedit tempora voluptates nostrum fugit neque exercitationem cumque nesciunt quod culpa temporibus voluptate iure quisquam, voluptas ipsum dolorem. Molestiae, aliquid! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, maiores. Labore iste maiores cum deleniti voluptatibus corporis iusto officia reiciendis ab dolor, accusamus sequi sint, necessitatibus dicta assumenda pariatur error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quod odio enim tenetur quis at inventore ipsum quasi recusandae repellendus consequatur asperiores, ab tempora ut porro excepturi! Aliquid, qui nemo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt saepe quae eligendi dolor atque corporis, omnis, qui vitae accusamus in placeat? Fuga tempora quidem quae, repellat expedita maiores consequuntur consectetur.</p>
 </body>
 </html>
