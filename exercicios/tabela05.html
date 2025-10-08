@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .cnome {
+            background-color: cornflowerblue;
+        }
+        .csexo {
+            background-color: greenyellow;
+        }
+        .cidade {
+            background-color: greenyellow;
+        }
+        .cprof {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Tabela de Registros</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hayley Preston</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Atriz</td>
+            </tr>
+            <tr>
+                <td>Jake Miles</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Mecânico</td>
+            </tr>
+            <tr>
+                <td>Ryot Jones</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Gamer</td>
+            </tr>
+            <tr>
+                <td>Patrice Wing</td>
+                <td>F</td>
+                <td>45</td>
+                <td>Jardineira</td>
+            </tr>
+            <tr>
+                <td>Jhon Rambo</td>
+                <td>M</td>
+                <td>50</td>
+                <td>Militar</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
