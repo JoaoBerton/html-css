@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Comandos novos</legend>
+            <label for="icor">Escolha a cor:</label>
+            <input type="color" name="cor" id="icor">
+            <p>
+                <label for="inivel">Indique sua satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="6" value="3">
+            </p>
+            <p>
+                <label for="ifoto">Adicione uma foto:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
