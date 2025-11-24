@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <label for="iest">Selecione seu estado:</label>
+        <select name="est" id="iest">
+        <optgroup label="Região Norte">
+            <option value="AC">Acre</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="PA">Pará</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="TO">Tocantins</option>
+        </optgroup>
+        <optgroup label="Região Nordeste">
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="MA">Maranhão</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="SE">Sergipe</option>
+        </optgroup>
+        <optgroup label="Região Centro-Oeste">
+            <option value="GO">Goiás</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="DF">Distrito Federal</option>
+        </optgroup>
+        <optgroup label="Região Sudeste">
+            <option value="ES">Espírito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS" selected>Rio Grande do Sul</option>
+        </optgroup>
+        </select>
+        <p>
+            <label for="lstprof">Selecione sua profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="PROF">Professor</option>
+                <option value="ENG">Engenheiro Eletricista</option>
+                <option value="AGN">Agrônomo</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ATL">Atleta</option>
+                <option value="AGR">Agricultor</option>
+                <option value="MED">Médico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Escreva alguma coisa &darr;:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
