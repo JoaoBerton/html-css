@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+body {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: 1.5em;
+}
+menu {
+    display: none;
+}
+main::after {
+    content: 'Conteúdo produzido por João Vitor e ensinado pelo www.cursoemvideo.com';
+}
+h1, h2, p {
+    padding: 10px;
+    text-align: justify;
+}

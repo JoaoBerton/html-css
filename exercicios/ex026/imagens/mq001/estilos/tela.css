@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+h1 {
+    background-color: rgb(20, 20, 223);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+}
+menu ul{
+    background-color: lightblue;
+    color: rgb(42, 45, 48);
+    margin: auto;
+}
+menu li {
+    display: inline-block;
+    padding: 5px;
+}
+main {
+    
+    background-color: rgba(151, 205, 205, 0.31);
+    margin: auto;
+    padding: 5px;
+}
+main p {
+    text-align: justify;
+    padding-top: 10px;
+    text-indent: 20px;
+}
+article {
+    display: block;
+    width: 600px;
+    margin: auto;
+}
