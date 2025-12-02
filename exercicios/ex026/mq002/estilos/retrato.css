@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /* Arquivo CSS em formato retrato: 'Portrait'.*/
+body {
+    background: url(../imagens/cev-portrait.jpg) left bottom no-repeat;
+    background-size: contain;
+}

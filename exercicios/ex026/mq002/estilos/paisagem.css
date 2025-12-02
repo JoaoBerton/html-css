@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /* Arquivo CSS para formato em paisagem: 'Landscape'. */
+body {
+    background: url(../imagens/cev-landscape.jpg) bottom center no-repeat;
+    background-size: contain;
+}
