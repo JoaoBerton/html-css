@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media print {
+    body {
+        background-color: aliceblue;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid black;
+        font-size: 2em;
+        text-shadow: none;
+    }
+    main::after {
+        text-decoration: overline;
+        content: 'Este documento foi feito por João Vitor R Berton sob os ensinamentos do www.cursoemvideo.com';
+    }
+    img#phone {display: none;}
+img#tablet {display: none;}
+img#pc {display: none;}
+img#print{display: block;}
+img#tv {display: none;}
+}
+@media only screen and (min-width:728px) and (max-width:992) { /*Versão para Tablets*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+img#tablet {display: block;}
+img#pc {display: none;}
+img#print{display: none;}
+img#tv {display: none;}
+}
+@media only screen and (min-width:992px) and (max-width:1200px) {/*Versão para desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {display: none;}
+img#tablet {display: none;}
+img#pc {display: block;}
+img#print{display: none;}
+img#tv {display: none;}
+}
+@media screen and (min-width:1200px) {/*Versão para Telas grandes*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none;}
+img#tablet {display: none;}
+img#pc {display: none;}
+img#print{display: none;}
+img#tv {display: block;}
+}
