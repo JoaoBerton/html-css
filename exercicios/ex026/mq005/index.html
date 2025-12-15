@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">
+menu
+</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,12 +27,21 @@
     <main>
         <article>
             <h2>O que é o 3i Atlas?</h2>
-            <p>O objeto interestelar conhecido como 3I/ATLAS foi recentemente detectado pelo sistema ATLAS (Asteroid Terrestrial-impact Last Alert System), uma rede de telescópios projetada para identificar objetos próximos da Terra que possam representar risco de colisão, como asteroides e cometas. Criado para fornecer alertas precoces de impactos potenciais, o ATLAS tem desempenhado um papel crucial na vigilância do céu, monitorando constantemente milhares de corpos celestes dentro do nosso sistema solar e além.
-                A descoberta do 3I/ATLAS chamou atenção especial por se tratar do terceiro objeto interestelar confirmado a atravessar o nosso sistema solar — um fenômeno raro que despertou grande interesse na comunidade científica. Os dois primeiros visitantes conhecidos, o enigmático “ʻOumuamua” em 2017 e o cometa 2I/Borisov em 2019, geraram debates sobre sua origem e natureza, mas o 3I/ATLAS apresenta características ainda mais peculiares. Seu comportamento dinâmico inclui manobras e acelerações incomuns que não se encaixam nas explicações convencionais para objetos naturais, como forças gravitacionais ou pressão da radiação solar.
-                Essa série de anomalias levou alguns pesquisadores a levantar a hipótese de que o 3I/ATLAS pode não ser um corpo natural, mas sim uma sonda ou espaçonave artificial de origem extraterrestre. Ainda mais surpreendente, um artigo científico publicado em 22 de julho propõe que o objeto estaria realizando manobras deliberadas para se aproximar da Terra — possivelmente com intenções hostis — e que essa aproximação poderia culminar em um ataque previsto para novembro deste ano.
+            <p>O objeto interestelar conhecido como <a href="https://g1.globo.com/fantastico/noticia/2025/12/08/3i-atlas-por-que-19-de-dezembro-e-o-dia-decisivo-para-os-cientistas-estudarem-o-cometa-misterioso.ghtml">3I/ATLAS</a> foi recentemente detectado pelo sistema <strong>ATLAS</strong> (<em>Asteroid Terrestrial-impact Last Alert System</em>), uma rede de telescópios projetada para identificar objetos próximos da Terra que possam representar risco de colisão, como asteroides e cometas. Criado para fornecer alertas precoces de impactos potenciais, o <strong>ATLAS</strong> tem desempenhado um papel crucial na vigilância do céu, monitorando constantemente milhares de corpos celestes dentro do nosso sistema solar e além.</p>
+                <p>A descoberta do <a href="https://www.gov.br/observatorio/pt-br/assuntos/noticias/3i-atlas-astronomo-do-observatorio-nacional-desmistifica-boatos-sobre-cometa">3I/ATLAS</a> chamou atenção especial por se tratar do <mark style="background-color: rgba(26, 53, 44, 0.522);"><em>terceiro objeto interestelar</em></mark> confirmado a atravessar o nosso sistema solar — um fenômeno raro que despertou grande interesse na comunidade científica. Os dois primeiros visitantes conhecidos, o enigmático <a href="https://www.bbc.com/portuguese/geral-46136478">“Oumuamua” em 2017 </a>e o cometa<a href="https://science.nasa.gov/solar-system/comets/2i-borisov/"> 2I/Borisov</a> em 2019, geraram debates sobre sua origem e natureza, mas o <strong>3I/ATLAS</strong> apresenta características ainda mais peculiares. Seu comportamento dinâmico inclui manobras e acelerações incomuns que não se encaixam nas explicações convencionais para objetos naturais, como forças gravitacionais ou pressão da radiação solar.</p>
+               <p>Essa série de anomalias levou alguns pesquisadores a levantar a hipótese de que o <a href="https://www.bbc.com/portuguese/articles/c04g04l40d1o">3I/ATLAS</a> pode não ser um corpo natural, mas sim uma sonda ou espaçonave artificial de origem extraterrestre. Ainda mais surpreendente, um artigo científico <em>publicado em 22 de julho</em> propõe que o objeto estaria realizando manobras deliberadas para se aproximar da Terra — possivelmente com intenções hostis — e que essa aproximação poderia culminar em um ataque previsto para novembro deste ano.
             </p>
-            <img src="https://www.ovnihoje.com/wp-content/uploads/2025/09/3iatlas-verde2-ft-768x432.jpg" alt="3i Atlas imagem" height="390px" width="490px">
+            <img src="https://www.ovnihoje.com/wp-content/uploads/2025/09/3iatlas-verde2-ft-768x432.jpg" alt="3i Atlas imagem" height="390px" width="490px"> <legend>Imagem do 3i Atlas captada fonte:"www.ovinihoje.com".</legend>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
