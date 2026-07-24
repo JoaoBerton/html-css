@@ -1,0 +1,20 @@
+@charset "UTF-8";
+div.container {
+    height: 300px;
+    padding: 3px;
+    background-color: cornflowerblue;
+    border: 3px solid rgb(131, 131, 244);
+    border-radius: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+div.item {
+    background-color: whitesmoke;
+    text-align: center;
+    border: 1px solid rgb(85, 73, 1);
+    margin-right: 2px;
+    padding: 3px;
+    border-radius: 10px 5px;
+}
