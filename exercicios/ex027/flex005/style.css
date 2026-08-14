@@ -1,0 +1,31 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+    color: rgb(130, 127, 127);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+main {
+    background-color: whitesmoke;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 4%;
+    left: 5%;;
+}
+ins {
+    background-color: aquamarine;
+    border: solid 2px azure;
+    border-radius: 7px 3.5px;
+    box-shadow: 2px 2px 5px rgba(211, 211, 211, 0.616);
+    padding: 2px;
+}
